@@ -4,9 +4,7 @@ export default withAuth(
     console.log("look at me", req.kindeAuth);
   },
   {
-    publicPaths: new RegExp(
-      "/((?!_next|[^?]*\\.(?:html?|css|js(?!on)|jpe?g|webp|png|gif|svg|ttf|woff2?|ico|csv|docx?|xlsx?|zip|webmanifest)).*)"
-    ),
+    publicPaths: [new RegExp("^(?!/my-account(/(?!favourites)([^/]*))*$).*")],
     isReturnToCurrentPage: true,
   }
 );
