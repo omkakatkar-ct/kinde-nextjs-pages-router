@@ -1,5 +1,4 @@
-import { GetServerSideProps } from "next";
-import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
+import Link from "next/link";
 
 export default function Dashboard() {
   return (
@@ -14,6 +13,7 @@ export default function Dashboard() {
       </div>
       <section className="next-steps-section">
         <h2 className="text-heading-1">Next steps for you</h2>
+        <Link href="/">Go to Home</Link>
       </section>
     </div>
   );

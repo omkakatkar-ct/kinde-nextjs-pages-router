@@ -8,7 +8,7 @@ export default function Home() {
           Let's start authenticating <br /> with KindeAuth
         </p>
         <p className="text-body-1 hero-tagline">Configure your app</p>
-
+        <Link href="/my-account">Go to Account</Link>
         <Link
           href="https://kinde.com/docs/sdks/nextjs-sdk"
           target="_blank"

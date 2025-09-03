@@ -4,7 +4,7 @@ export default withAuth(
     console.log("look at me", req.kindeAuth);
   },
   {
-    publicPaths: [new RegExp("^(?!/my-account(/(?!favourites)([^/]*))*$).*")],
+    publicPaths: [/^(?!\/my-account(?:\/(?!favourites)([^/]+))?$).*/],
     isReturnToCurrentPage: true,
   }
 );
